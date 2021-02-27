@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "ganache": "ganache-cli -m \"can flip ocean logic case muffin expose ice truly correct brand budget\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@openzeppelin/cli": "^2.8.2"
+    "@truffle/contract": "^4.3.8",
+    "ganache-cli": "^6.12.2",
+    "truffle": "^5.1.67",
+    "web3": "^1.3.4"
   }
 }
