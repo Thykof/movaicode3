@@ -5,9 +5,9 @@ contract MovaiCode {
     string public result0;
     string public result1;
 
-    function split(string calldata value, uint256 length) public {
+    function split(string calldata value, uint256 l) public {
         uint256 index;
-        for (uint256 i = 0; i < length; i++) {
+        for (uint256 i = 0; i < l; i++) {
             if (bytes(value)[i] == " ") {
                 index = i;
             }
