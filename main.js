@@ -11,20 +11,17 @@ var movaiCode = contract(MovaiCode)
 movaiCode.setProvider(provider);
 var instance;
 instance = new web3.eth.Contract(
-        MovaiCode.abi,
-        MovaiCode.networks[Object.keys(MovaiCode.networks)[0]].address
+    MovaiCode.abi,
+    MovaiCode.networks[Object.keys(MovaiCode.networks)[0]].address
 )
 instance.methods.split("DAFT PUNK", 9).send({
-        from: ADDRESS
+    from: ADDRESS
 })
-.then((tx) => {
-    // console.log(tx);
-    return instance.methods.result0().call()
-})
-.then((r) => {
-    console.log('result0: ', r);
-    return instance.methods.result1().call()
-})
-.then((r) => {
-    console.log('result1: ', r);
+.on('receipt', receipt => {
+    let result = [
+        receipt.events["Result"].returnValues["0"],
+        receipt.events["Result"].returnValues["1"]
+    ]
+    console.log(result);
+    // console.log(`["${result[0]}", "${result[1]}"]`);
 })
