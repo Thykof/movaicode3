@@ -6,14 +6,14 @@ contract MovaiCode {
     string public result1;
 
     function split(string calldata value, uint256 l) public {
-        uint256 index;
+        uint256 i_;
         for (uint256 i = 0; i < l; i++) {
             if (bytes(value)[i] == " ") {
-                index = i;
+                i_ = i;
             }
         }
 
-        result0 = value[:index];
-        result1 = value[index+1:];
+        result0 = value[:i_];
+        result1 = value[i_+1:];
     }
 }
