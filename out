@@ -1,0 +1,33 @@
+Done
+Error: Returned error: Invalid Signature
+    at Object.ErrorResponse (/home/thykof/Documents/movaicode3/node_modules/web3/node_modules/web3-core-helpers/lib/errors.js:28:19)
+    at /home/thykof/Documents/movaicode3/node_modules/web3/node_modules/web3-core-requestmanager/lib/index.js:303:36
+    at XMLHttpRequest.request.onreadystatechange (/home/thykof/Documents/movaicode3/node_modules/web3/node_modules/web3-providers-http/lib/index.js:98:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (/home/thykof/Documents/movaicode3/node_modules/xhr2-cookies/dist/xml-http-request-event-target.js:34:22)
+    at XMLHttpRequest._setReadyState (/home/thykof/Documents/movaicode3/node_modules/xhr2-cookies/dist/xml-http-request.js:208:14)
+    at XMLHttpRequest._onHttpResponseEnd (/home/thykof/Documents/movaicode3/node_modules/xhr2-cookies/dist/xml-http-request.js:318:14)
+    at IncomingMessage.<anonymous> (/home/thykof/Documents/movaicode3/node_modules/xhr2-cookies/dist/xml-http-request.js:289:61)
+    at IncomingMessage.emit (events.js:327:22)
+    at endReadableNT (_stream_readable.js:1221:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  data: {
+    stack: 'Error: Invalid Signature\n' +
+      '    at e.getSenderPublicKey (/home/thykof/Documents/movaicode3/node_modules/ganache-cli/build/ganache-core.node.cli.js:42:35064)\n' +
+      '    at e.getSenderAddress (/home/thykof/Documents/movaicode3/node_modules/ganache-cli/build/ganache-core.node.cli.js:42:34917)\n' +
+      '    at S.queueRawTransaction (/home/thykof/Documents/movaicode3/node_modules/ganache-cli/build/ganache-core.node.cli.js:55:210549)\n' +
+      '    at p.eth_sendRawTransaction (/home/thykof/Documents/movaicode3/node_modules/ganache-cli/build/ganache-core.node.cli.js:55:200119)\n' +
+      '    at p.handleRequest (/home/thykof/Documents/movaicode3/node_modules/ganache-cli/build/ganache-core.node.cli.js:55:196970)\n' +
+      '    at t (/home/thykof/Documents/movaicode3/node_modules/ganache-cli/build/ganache-core.node.cli.js:55:65024)\n' +
+      '    at a.handleRequest (/home/thykof/Documents/movaicode3/node_modules/ganache-cli/build/ganache-core.node.cli.js:55:195252)\n' +
+      '    at t (/home/thykof/Documents/movaicode3/node_modules/ganache-cli/build/ganache-core.node.cli.js:55:65024)\n' +
+      '    at f.s.handleRequest (/home/thykof/Documents/movaicode3/node_modules/ganache-cli/build/ganache-core.node.cli.js:55:178304)\n' +
+      '    at f.handleRequest (/home/thykof/Documents/movaicode3/node_modules/ganache-cli/build/ganache-core.node.cli.js:55:176115)\n' +
+      '    at t (/home/thykof/Documents/movaicode3/node_modules/ganache-cli/build/ganache-core.node.cli.js:55:65024)\n' +
+      '    at o.handleRequest (/home/thykof/Documents/movaicode3/node_modules/ganache-cli/build/ganache-core.node.cli.js:55:184369)\n' +
+      '    at t (/home/thykof/Documents/movaicode3/node_modules/ganache-cli/build/ganache-core.node.cli.js:55:65024)\n' +
+      '    at a.handleRequest (/home/thykof/Documents/movaicode3/node_modules/ganache-cli/build/ganache-core.node.cli.js:55:183814)\n' +
+      '    at t (/home/thykof/Documents/movaicode3/node_modules/ganache-cli/build/ganache-core.node.cli.js:55:65024)\n' +
+      '    at u._handleAsync (/home/thykof/Documents/movaicode3/node_modules/ganache-cli/build/ganache-core.node.cli.js:55:65060)',
+    name: 'Error'
+  }
+}
