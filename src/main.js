@@ -25,8 +25,8 @@ const TO = '0x59dCD96E84E042aE2ff8651D53F58A1dA63Fca08';
   console.log(`balance of ${ADDRESS} is ${result.fromBalance}`);
   console.log(`balance of ${TO} is ${result.toBalance}`);
 
-  // compile ans deploy a contract:
-  console.log("\ncompile ans deploy a contract");
+  // compile and deploy a contract:
+  console.log("\ncompile and deploy the contract");
   var contractData = compileContract(contractCode)
   var receipt = await deployContract(web3, contractData, ADDRESS, PRIVATE_KEY)
   let contractAddress = receipt.contractAddress
